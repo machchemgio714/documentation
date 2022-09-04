@@ -1,0 +1,17 @@
+Message: Unable to load DLL 'injector.dll': A dynamic link library (DLL) initialization routine failed. (Exception from HRESULT: 0x8007045A)
+StackTrace:    at injection.Injector.inject(String dll_path)
+   at krnlss.Program.NewInject()
+   at krnlss.Program.<auto_attach>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_1(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+Source: krnlss
+TargetSite: inject_status inject(System.String)
+HResult: -2146233052
+HelpLink: 
+Values: [ System.Collections.ListDictionaryInternal+NodeKeyValueCollection ]
